@@ -18,6 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  animation: show 0.8s ease;
 }
 .container {
   text-align: center;
@@ -96,5 +97,28 @@ body {
   display: none;
   position: relative;
   bottom: 65px;
-  border: 2px solid red;
+  font-size: 26px;
+  font-weight: 700;
+  animation: show1 0.4s ease-in;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    margin-top: 25px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@keyframes show1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
