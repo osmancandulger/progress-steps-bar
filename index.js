@@ -41,8 +41,10 @@ function update() {
     prev.disabled = true;
   } else if (currentActive == circles.length) {
     next.disabled = true;
+    document.querySelector(".title").style.display = "block";
   } else {
     prev.disabled = false;
     next.disabled = false;
+    document.querySelector(".title").style.display = "none";
   }
 }

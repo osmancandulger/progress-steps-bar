@@ -93,8 +93,8 @@ body {
   height: 30px;
   border-radius: 50%;
   border: 3px solid var(--line-border-empty);
-  -webkit-transition: 0.4 ease;
-  transition: 0.4 ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .container .circle.active {
@@ -121,5 +121,12 @@ body {
 .btn:disabled {
   background: var(--line-border-empty);
   cursor: not-allowed;
+}
+
+.title {
+  display: none;
+  position: relative;
+  bottom: 65px;
+  border: 2px solid red;
 }
 /*# sourceMappingURL=index.css.map */
